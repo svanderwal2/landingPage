@@ -25,6 +25,7 @@ body {
 
 
 /* Typeography General*/
+
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
@@ -98,6 +99,20 @@ section {
     color: #5e7985;
     font-weight: 700;
     transition: ease 0.3s all;
+}
+
+@media (max-width: 900px) {
+    ul#navbar__list {
+        padding: 0;
+    }
+
+    .navbar__menu li {
+        padding: 20px 10px;
+    }
+
+    .navbar__menu li a {
+        font-size: 20px;
+    }
 }
 
 /* Header Styles */
@@ -208,12 +223,6 @@ section:nth-of-type(3n + 1) .landing__container::after {
 section.active {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-li.active {
-    color: #058c93;
-    font-weight: 800;
-    font-size: 1.5rem;
 }
 
 section.active .landing__container::before {
