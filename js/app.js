@@ -2,7 +2,6 @@
 
 const pageSections = document.querySelectorAll("section");
 const navbar = document.getElementById("navbar__list");
-const navLi = document.getElementsByTagName("li");
 
 // Build Nav
 
@@ -14,6 +13,7 @@ for (let i = 0; i < pageSections.length; i++) {
 };
 
 // Add class 'active' to section when near top of viewport
+// reference: https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
 
 function inViewport(element) {
     let bounding = element.getBoundingClientRect();
