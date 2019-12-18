@@ -39,6 +39,12 @@ h1 {
     }
 }
 
+@media (max-width: 900px) {
+    h1 {
+        margin: 3em 4rem 1em;
+    }
+}
+
 h2 {
     border-bottom: 1px solid #cc1;
     font-family: 'Oxygen', Sans-Serif;
@@ -98,7 +104,7 @@ section {
 .navbar__menu li a:hover {
     color: #5e7985;
     font-weight: 700;
-    transition: ease 0.3s all;
+    transition: ease 0.2s all;
 }
 
 @media (max-width: 900px) {
@@ -111,7 +117,7 @@ section {
     }
 
     .navbar__menu li a {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -216,13 +222,18 @@ section:nth-of-type(3n + 1) .landing__container::after {
     transition: ease 0.5s all;
 }
 
-
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.active {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+section.active h2 {
+    letter-spacing: 1.03rem;
+    font-size: 52px;
+    font-weight: 500;
 }
 
 section.active .landing__container::before {
